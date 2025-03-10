@@ -1,19 +1,17 @@
 using UnityEngine;
 
-public class ArrayOne : MonoBehaviour
+public class FunctionPartemeter : MonoBehaviour
 {
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        int[] intArray;
-
-        intArray = new int[3];
-
+        ShowMessage("hello");
+        ShowMessage("hi");
     }
 
     // Update is called once per frame
-    void Update()
+    void ShowMessage(string message)
     {
-        
+        Debug.Log(message);
     }
 }
