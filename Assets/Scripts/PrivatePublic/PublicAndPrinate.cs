@@ -13,6 +13,10 @@ namespace PrivatePublic
 
             myCar.Hi();
             //myCar.Bye();
+
+            myCar.SetAge(21);
+            int myAge = myCar.GetAge();
+            Debug.Log(myAge);
         }
 
         // Update is called once per frame

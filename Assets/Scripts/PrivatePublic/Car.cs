@@ -16,5 +16,14 @@ namespace PrivatePublic
         {
             Debug.Log("안녕히 계세요");
         }
+        public void SetAge(int  nai)
+        {
+            age = nai;
+        }
+
+        public int GetAge()
+        {
+            return age;
+        }
     }
 }
