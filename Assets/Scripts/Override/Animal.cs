@@ -14,5 +14,14 @@ namespace Override
         }
     }
 
+    public class Cat : Animal
+    {
+        public override void Eat()
+        {
+            base.Eat();
+
+            Debug.Log("°í¾çÀ×°¡ ¹äÀ» ¸Ô´Â´Ù.");
+        }
+    }
 }
 

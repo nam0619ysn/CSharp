@@ -11,6 +11,8 @@ namespace Override
             child.Run();
             child.Walk();
         }
-
+        void PritNumber(int number) => Debug.Log($"{number}");   
+        void PritNumber(double number) => Debug.Log($"{number}");   
+        void PritNumber(int a,int b) => Debug.Log($"{a+b}");   
     }
 }
