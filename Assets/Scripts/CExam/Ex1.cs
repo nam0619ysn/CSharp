@@ -1,13 +1,23 @@
 using System;
 using Unity.VisualScripting.FullSerializer;
 using UnityEngine;
-
+namespace CExam { 
 public class Ex1 : MonoBehaviour
 {
     // Start is called once before the first execution of Update after the MonoBehaviour is created
-   
 
-        class A
+    void Start()
+    {
+
+            A a = new A();
+            a.PrintDays();
+
+
+            int result = A.Add(5, 6);
+            Debug.Log(result);
+
+        }
+    public class A
         {
             private string[] days = { "일","월","화","수","목","금","토" };
 
@@ -24,9 +34,9 @@ public class Ex1 : MonoBehaviour
             }
          }
 
-   class B
+    public class B
     {
-        static void Main(string[] args)
+       public void EC()
         {
             
             A a = new A();
@@ -40,3 +50,4 @@ public class Ex1 : MonoBehaviour
 
     }
 }
+    }

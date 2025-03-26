@@ -1,24 +1,35 @@
 using System;
 using UnityEngine;
-
-public class Ex2 : MonoBehaviour
+namespace CExam
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    public class Ex2 : MonoBehaviour
     {
-        int[] numbers = { -2, -5, -3, -7, -1 };
-
-        int min = numbers[0];
-
-        foreach (int num in numbers)
+        // Start is called once before the first execution of Update after the MonoBehaviour is created
+        void Start()
         {
-            if (num < min)
-            {
-                min = num;
-            }
-        }
+            int[] numbers = { -2, -5, -3, -7, -1 };
 
-       Debug.Log("최소값은 " + min);
+            int min = numbers[0];
+
+            //foreach (int num in numbers)
+            //{
+            //    if (num < min)
+            //    {
+            //        min = num;
+            //    }
+            //}
+
+
+            for (int num=0; num< numbers.Length;num++)
+            {
+                if (num < min)
+                {
+                    min = num;
+                }
+            }
+
+            Debug.Log("최소값은 " + min);
+        }
     }
 }
 
